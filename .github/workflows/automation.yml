@@ -29,7 +29,7 @@ jobs:
         run: python bikeshare_model/train_pipeline.py
 
       - name: Run Tests
-        run: python -m pytest venv/test_features.py venv/test_prediction.py
+        run: python -m pytest bikeshare_model/test_features.py bikeshare_model/test_prediction.py
 
       - name: Linting
         run: pylint bikeshare_model
