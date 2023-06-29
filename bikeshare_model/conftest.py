@@ -1,6 +1,3 @@
-73% of storage used … 
-You use storage when you save to Drive, back up to Google Photos and send and receive email on Gmail
-
 import sys
 from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent))
