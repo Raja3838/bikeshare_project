@@ -11,8 +11,6 @@ from typing import Dict, List
 from pydantic import BaseModel
 from strictyaml import YAML, load
 
-import bikeshare_model
-
 # Project Directories
 PACKAGE_ROOT = Path(bikeshare_model.__file__).resolve().parent
 ROOT = PACKAGE_ROOT.parent
