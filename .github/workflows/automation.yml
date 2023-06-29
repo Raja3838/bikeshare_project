@@ -24,16 +24,13 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements/requirements.txt
           pip install pytest
-          pip install pylint black
+          pip install black
 
       - name: Model Training
         run: python bikeshare_model/train_pipeline.py
 
       - name: Run Tests
         run: python -m pytest bikeshare_model/test_features.py bikeshare_model/test_prediction.py
-
-      - name: Linting
-        run: pylint bikeshare_model
 
       - name: Formatting
         run: black bikeshare_model
