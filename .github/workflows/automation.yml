@@ -24,6 +24,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements/requirements.txt
           pip install pytest
+          pip install pylint
 
       - name: Model Training
         run: python bikeshare_model/train_pipeline.py
