@@ -68,3 +68,4 @@ def test_weekday_variable_encoder(sample_input_data):
 
     # Then
     assert subject.loc[8688, 'weekday_Sun'] == 1.0
+
