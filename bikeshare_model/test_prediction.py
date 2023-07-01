@@ -1,5 +1,6 @@
 import sys
 from pathlib import Path
+
 sys.path.append(str(Path(__file__).parent.parent))
 
 import numpy as np
@@ -13,7 +14,7 @@ def test_make_prediction(sample_input_data):
     expected_num_of_predictions = 3476
 
     # When
-    result = make_prediction(input_data = sample_input_data[0])
+    result = make_prediction(input_data=sample_input_data[0])
 
     # Then
     predictions = result.get("predictions")
@@ -21,7 +22,7 @@ def test_make_prediction(sample_input_data):
     assert isinstance(predictions[0], np.float64)
     assert result.get("errors") is None
     assert len(predictions) == expected_num_of_predictions
-    
+
     _predictions = list(predictions)
     y_true = sample_input_data[1]
 
